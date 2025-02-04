@@ -1432,36 +1432,36 @@ class DEW(object):
             plt.figure()
             plt.plot(self.pressureUsed, [i[0] for i in self.delG])
             plt.xlabel('Pressure (bar)')
-            plt.ylabel('$\Delta$G')
-            plt.title('Pressure vs. $\Delta$G Psat Curve')
+            plt.ylabel(r'$\Delta$G')
+            plt.title(r'Pressure vs. $\Delta$G Psat Curve')
             plt.show()
             
             plt.figure()
             plt.plot(self.pressureUsed, [i[0] for i in self.delV])
             plt.xlabel('Pressure (bar)')
-            plt.ylabel('$\Delta$V')
-            plt.title('Pressure vs. $\Delta$V Psat Curve')
+            plt.ylabel(r'$\Delta$V')
+            plt.title(r'Pressure vs. $\Delta$V Psat Curve')
             plt.show()
             
             plt.figure()
             plt.plot(self.tempUsed, [i[0] for i in self.logK])
-            plt.xlabel('Temperature ($^\circ$ C)')
+            plt.xlabel(r'Temperature ($^\circ$ C)')
             plt.ylabel('LogK')
             plt.title('Temperature vs. LogK Psat Curve')
             plt.show()
             
             plt.figure()
             plt.plot(self.tempUsed, [i[0] for i in self.delG])
-            plt.xlabel('Temperature ($^\circ$ C)')
-            plt.ylabel('$\Delta$G')
-            plt.title('Temperature vs. $\Delta$G Psat Curve')
+            plt.xlabel(r'Temperature ($^\circ$ C)')
+            plt.ylabel(r'$\Delta$G')
+            plt.title(r'Temperature vs. $\Delta$G Psat Curve')
             plt.show()
             
             plt.figure()
             plt.plot(self.tempUsed, [i[0] for i in self.delV])
-            plt.xlabel('Temperature ($^\circ$ C)')
-            plt.ylabel('$\Delta$V')
-            plt.title('Temperature vs. $\Delta$V Psat Curve')
+            plt.xlabel(r'Temperature ($^\circ$ C)')
+            plt.ylabel(r'$\Delta$V')
+            plt.title(r'Temperature vs. $\Delta$V Psat Curve')
             plt.show()
             
         ####### NON PSAT PLOTS ########    
@@ -1895,14 +1895,4 @@ class DEW(object):
             plt.ylabel('delV')
             plt.xlabel('Pressure (Kb)')
             plt.show()
-
-
-# In[9]:
-
-
-
-# In[ ]:
-
-
-
 
